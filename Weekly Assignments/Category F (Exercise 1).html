@@ -1,0 +1,55 @@
+<!--Exercise 1
+• Build 'contact.html' with a form that includes: <label>/<input> (email, tel), <textarea> for message, and
+a <select> for subject.
+• Group related inputs with <fieldset>/<legend>.
+• Add a <datalist> for city suggestions and a <button> to submit. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+</head>
+<body>
+  <h1>Contact Us</h1>
+
+  <form action="/submit-contact" method="post">
+    <!-- Group 1: Personal Info -->
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+92-xxx-xxxxxxx"><br><br>
+
+      <label for="city">City:</label>
+      <input id="city" name="city" list="cities">
+      <datalist id="cities">
+        <option value="Faisalabad">
+        <option value="Lahore">
+        <option value="Karachi">
+        <option value="Islamabad">
+      </datalist>
+    </fieldset>
+
+    <!-- Group 2: Message -->
+    <fieldset>
+      <legend>Message</legend>
+
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject">
+        <option value="general">General Inquiry</option>
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option>
+      </select><br><br>
+
+      <label for="msg">Your Message:</label><br>
+      <textarea id="msg" name="msg" rows="4" cols="40"></textarea>
+    </fieldset>
+
+    <br>
+    <button type="submit">Send Message</button>
+  </form>
+</body>
+</html>
