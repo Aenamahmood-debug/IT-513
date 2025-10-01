@@ -1,0 +1,80 @@
+<!--Exercise 2
+• Create 'timetable.html' with a <caption>, <thead>/<tbody>/<tfoot>, and proper <th scope> attributes.
+• Include one merged cell using colspan or rowspan.
+• Optionally add a <colgroup>/<col> to style the first column. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weekly Class Timetable</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #666;
+      padding: 8px;
+      text-align: center;
+    }
+    colgroup col:first-child {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Class Timetable</h1>
+
+  <table>
+    <caption>Weekly Class Schedule - Fall Semester</caption>
+
+    <!-- Optional colgroup for styling first column -->
+    <colgroup>
+      <col style="background-color: #f9f9f9;">
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th scope="col">Day</th>
+        <th scope="col">9:00–10:00</th>
+        <th scope="col">10:00–11:00</th>
+        <th scope="col">11:00–12:00</th>
+        <th scope="col">12:00–1:00</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">Monday</th>
+        <td>Math</td>
+        <td>Science</td>
+        <td>Break</td>
+        <td>English</td>
+      </tr>
+      <tr>
+        <th scope="row">Tuesday</th>
+        <td colspan="2">Lab Session</td>
+        <td>Break</td>
+        <td>History</td>
+      </tr>
+      <tr>
+        <th scope="row">Wednesday</th>
+        <td>Geography</td>
+        <td>Art</td>
+        <td>Break</td>
+        <td>PE</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="5">Note: Schedule may change on public holidays.</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
