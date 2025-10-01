@@ -1,0 +1,41 @@
+<!--Exercise 2
+• Create 'media.html' with one <audio> and one <video> element.
+• Provide at least one <source> for each and a <track> for the video.
+• Optionally include a client-side image map using <map>/<area>.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Example</title>
+</head>
+<body>
+
+  <h1>Media Page</h1>
+
+  <!-- Audio Element -->
+  <h2>Audio Example</h2>
+  <audio controls>
+    <source src="media/audio-sample.mp3" type="audio/mpeg">
+    <source src="media/audio-sample.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Video Element -->
+  <h2>Video Example</h2>
+  <video controls width="480">
+    <source src="media/video-sample.mp4" type="video/mp4">
+    <source src="media/video-sample.webm" type="video/webm">
+    <track src="media/subtitles.vtt" kind="subtitles" srclang="en" label="English">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Optional: Client-side Image Map -->
+  <h2>Interactive Image Map</h2>
+  <img src="images/world-map.jpg" alt="World Map" usemap="#worldmap" width="500">
+  <map name="worldmap">
+    <area shape="rect" coords="70,50,120,100" href="https://en.wikipedia.org/wiki/Europe" alt="Europe" target="_blank" rel="noopener">
+    <area shape="circle" coords="300,150,40" href="https://en.wikipedia.org/wiki/Australia" alt="Australia" target="_blank" rel="noopener">
+  </map>
+
+</body>
+</html>
