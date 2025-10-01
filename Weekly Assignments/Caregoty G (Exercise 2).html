@@ -1,0 +1,28 @@
+<!--Exercise 2
+• Create 'welcome.html' with a <dialog> opened by a button.
+• Include a form with method="dialog" and a Close button inside the dialog.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Dialog</title>
+</head>
+<body>
+    <h2>Welcome Page</h2>
+
+    <button id="openDialog">Open Welcome Message</button>
+
+    <dialog id="welcomeDialog">
+        <p>Welcome to our website! We hope you enjoy your visit.</p>
+        <form method="dialog">
+            <button>Close</button>
+        </form>
+    </dialog>
+
+    <script>
+        document.getElementById('openDialog').addEventListener('click', () => {
+            document.getElementById('welcomeDialog').showModal();
+        });
+    </script>
+</body>
+</html>
