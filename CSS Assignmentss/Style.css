@@ -1,19 +1,18 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: black;
+  background-color: teal;
   color: white;
   line-height: 1.5;
 }
 /* Header styling */
 header {
-  background-color: black;
-  color: darkred;
+  background-color: white;
+  color: teal;
   padding: 20px;
   text-align: center;
 }
@@ -29,34 +28,34 @@ header li {
 }
 header a {
   padding:20px;
-  color:darkred;
+  color:black;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
 }
 header a:hover {
-  color:red;
-  text-shadow: 0 0 10px crimson;
+  color:teal;
+  text-shadow: 0 0 10px grey;
 }
 /* main design */
 section{
-    background-color:darkred;
-    color:white;
+    background-color:whitesmoke;
+    color:black;
     border-radius: 30px;
     padding:20px;
     margin:50px auto;
     width:80%;
-    box-shadow: 0 0 20px red;
+    box-shadow: 0 0 20px whitesmoke;
 }
 section h2{
-    color:white;
+    color:teal;
     padding:10px;
     margin:10px 20px;
     text-align:center;
     border-radius:6px;
 }
 section h3{
-    background-color:black;
+    background-color:teal;
     color:white;
     padding:10px;
     margin:10px 20px;
@@ -66,10 +65,11 @@ section h3{
 }
 article:first-of-type  > p{
   box-sizing: 8px;
-  background-color:#111;
-  color:white;
+  background-color:none;
+  color:black;
   padding:10px;
-  margin:10px 20px;
+  margin:10px 20px ;
+  line-height: normal;
 }
 
 /* Form fields */
@@ -77,9 +77,9 @@ input[type="text"],
 input[type="email"],
 select,
 textarea {
-  background-color: #111;
-  color: red;
-  border: 1px solid rgba(255, 0, 0, 0.7);
+  background-color:white;
+  color: black;
+  border: 1px solid teal;
   padding:10px;
   margin:5px 5px;
   border-radius: 6px;
@@ -93,12 +93,12 @@ input[type="email"],
 select:focus,
 textarea:focus{
   outline: none;
-  border-color:darkred;
-  box-shadow: 0 0 6px red;
+  border-color:teal;
+  box-shadow: 0 0 6px black;
 }
 fieldset {
   border: none;
-  color:white;
+  color:black;
   padding: 0;
   margin: 0;
 }
@@ -106,13 +106,13 @@ fieldset {
 /*Label and placeholder styling */
 label {
   display: block;
-  color: white;
+  color: black;
   margin-bottom: 6px;     
 }
 input[type="submit"] {
-  background-color: black;
+  background-color: teal;
   color: white;
-  border: 2px solid darkred;
+  border: 2px solid black;
   padding: 10px;
   border-radius:6px;
   font-weight: bold;
@@ -121,9 +121,9 @@ input[type="submit"] {
   transition: all 0.3s ease;
 }
 input[type="submit"]:hover{
-  background-color: red;
+  background-color: teal;
   color: black;
-  border: 2px solid red;
+  border: 2px solid whitesmoke;
   margin: 0 10px;
 }
 .form-buttons {
@@ -131,20 +131,20 @@ input[type="submit"]:hover{
 }
 
 article address{
-  background-color: #111;
-  color:red;
+  background-color: teal;
+  color:white;
   margin:20px 10px;
   padding:5px;
 }
 article address a{
-  background-color:#111;
+  background-color:teal;
   color:white;
   margin:0 10px;
   padding:5px;
 
 }
 article address a:hover{
-  background-color:red;
+  background-color:teal;
 }
 table{
     border-collapse: collapse;
@@ -154,19 +154,19 @@ table{
 }
 
 table, th, td {
-  border: 1px solid darkred;
+  border: 1px solid teal;
 }
 
 table th{
-    background-color:#111;
-    color:red;
+    background-color:teal;
+    color:white;
     text-align:center;
     font-weight:bold;
     margin: 0 8px;
     padding:10px
 }
 table td{
-    background-color:black;
+    background-color:teal;
     color:white;
     text-align:center;
     padding:8px;
@@ -174,12 +174,12 @@ table td{
 }
 
 table tbody tr:hover {
-  background-color: crimson;
-  color: black;
+  background-color: teal;
+  color: grey;
   transition: 0.3s;
 }
 summary{
-  background-color:#111;
+  background-color:teal;
   color:white;
   text-align:center;
   font-weight:bold;
@@ -188,7 +188,7 @@ summary{
 }
 
 details p{
-  background-color: red;
+  background-color: teal;
   border-radius:6px;
   padding:5px;
   margin:0 auto;
@@ -196,8 +196,8 @@ details p{
 
 /* Footer styling */
 footer {
-  background-color: black;
-  color:darkred;
+  background-color:black;
+  color:whitesmoke;
   padding: 20px;
   text-align: center;
 }
@@ -213,12 +213,12 @@ footer li {
 }
 footer a {
   padding: 30px;
-  color:darkred;
+  color:whitesmoke;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
 }
 footer a:hover {
-  color: darkred;
-  text-shadow: 0 0 10px red;
+  color: teal;
+  text-shadow: 0 0 10px grey;
 }
