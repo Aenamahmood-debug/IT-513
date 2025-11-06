@@ -5,14 +5,14 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: teal;
+  background-color: mediumslateblue;
   color: white;
   line-height: 1.5;
 }
 /* Header styling */
 header {
   background-color: white;
-  color: teal;
+  color: mediumslateblue;
   padding: 20px;
   text-align: center;
 }
@@ -34,7 +34,7 @@ header a {
   transition: all 0.3s ease;
 }
 header a:hover {
-  color:teal;
+  color:mediumslateblue;
   text-shadow: 0 0 10px grey;
 }
 /* main design */
@@ -48,14 +48,14 @@ section{
     box-shadow: 0 0 20px whitesmoke;
 }
 section h2{
-    color:teal;
+    color:mediumslateblue;
     padding:10px;
     margin:10px 20px;
     text-align:center;
     border-radius:6px;
 }
 section h3{
-    background-color:teal;
+    background-color:mediumslateblue;
     color:white;
     padding:10px;
     margin:10px 20px;
@@ -79,7 +79,7 @@ select,
 textarea {
   background-color:white;
   color: black;
-  border: 1px solid teal;
+  border: 1px solid mediumslateblue;
   padding:10px;
   margin:5px 5px;
   border-radius: 6px;
@@ -93,7 +93,7 @@ input[type="email"],
 select:focus,
 textarea:focus{
   outline: none;
-  border-color:teal;
+  border-color:mediumslateblue;
   box-shadow: 0 0 6px black;
 }
 fieldset {
@@ -110,7 +110,7 @@ label {
   margin-bottom: 6px;     
 }
 input[type="submit"] {
-  background-color: teal;
+  background-color: mediumslateblue;
   color: white;
   border: 2px solid black;
   padding: 10px;
@@ -121,7 +121,7 @@ input[type="submit"] {
   transition: all 0.3s ease;
 }
 input[type="submit"]:hover{
-  background-color: teal;
+  background-color: mediumslateblue;
   color: black;
   border: 2px solid whitesmoke;
   margin: 0 10px;
@@ -131,20 +131,20 @@ input[type="submit"]:hover{
 }
 
 article address{
-  background-color: teal;
+  background-color: mediumslateblue;
   color:white;
   margin:20px 10px;
   padding:5px;
 }
 article address a{
-  background-color:teal;
+  background-color:mediumslateblue;
   color:white;
   margin:0 10px;
   padding:5px;
 
 }
 article address a:hover{
-  background-color:teal;
+  background-color:mediumslateblue;
 }
 table{
     border-collapse: collapse;
@@ -154,11 +154,11 @@ table{
 }
 
 table, th, td {
-  border: 1px solid teal;
+  border: 1px solid mediumslateblue;
 }
 
 table th{
-    background-color:teal;
+    background-color:mediumslateblue;
     color:white;
     text-align:center;
     font-weight:bold;
@@ -166,7 +166,7 @@ table th{
     padding:10px
 }
 table td{
-    background-color:teal;
+    background-color:mediumslateblue;
     color:white;
     text-align:center;
     padding:8px;
@@ -174,12 +174,12 @@ table td{
 }
 
 table tbody tr:hover {
-  background-color: teal;
+  background-color: mediumslateblue;
   color: grey;
   transition: 0.3s;
 }
 summary{
-  background-color:teal;
+  background-color:mediumslateblue;
   color:white;
   text-align:center;
   font-weight:bold;
@@ -188,7 +188,7 @@ summary{
 }
 
 details p{
-  background-color: teal;
+  background-color: mediumslateblue;
   border-radius:6px;
   padding:5px;
   margin:0 auto;
@@ -219,6 +219,6 @@ footer a {
   transition: all 0.3s ease;
 }
 footer a:hover {
-  color: teal;
+  color: mediumslateblue;
   text-shadow: 0 0 10px grey;
 }
