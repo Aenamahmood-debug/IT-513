@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>WebDev Course - Contact Us</title>
+</head>
+<body class="font-sans bg-[mediumslateblue] text-white leading-relaxed">
+
+  <!-- Header -->
+  <header class="bg-white text-[mediumslateblue] p-8 text-center">
+    <h1 class="text-3xl font-bold mb-4">WebDev Course</h1>
+    <nav>
+      <ul class="flex justify-center gap-8">
+        <li><a href="Index (Tailwind).html" class="text-black hover:text-[mediumslateblue] hover:drop-shadow-[0_0_10px_grey] font-bold transition">Home</a></li>
+        <li><a href="registration (Tailwind).html" class="text-black hover:text-[mediumslateblue] hover:drop-shadow-[0_0_10px_grey] font-bold transition">Registration</a></li>
+        <li><a href="product (Tailwind).html" class="text-black hover:text-[mediumslateblue] hover:drop-shadow-[0_0_10px_grey] font-bold transition">Products</a></li>
+        <li><a href="contact (Tailwind).html" class="text-black hover:text-[mediumslateblue] hover:drop-shadow-[0_0_10px_grey] font-bold transition">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <section class="bg-[whitesmoke] text-black p-8 rounded-[30px] shadow-[0_0_20px_whitesmoke] w-4/5 mx-auto my-10">
+      <h2 class="text-[mediumslateblue] text-center font-bold text-2xl mb-6">Contact Us</h2>
+      
+      <article>
+        <h3 class="bg-[mediumslateblue] text-white text-center font-bold mx-2 my-2 p-3 text-2xl underline rounded-md">Get in Touch</h3>
+        <p class="text-black mx-2 my-2 p-2">We'd love to hear from you. Please use the form below to send us a message.</p>
+        
+        <form action="contact-success.html" method="get" class="space-y-4">
+          <div>
+            <label for="contact-name" class="block font-bold mb-1">Your Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required class="bg-white text-black border border-[mediumslateblue] p-2 rounded-md w-full focus:border-[mediumslateblue] focus:shadow-[0_0_6px_black] outline-none">
+          </div>
+
+          <div>
+            <label for="contact-email" class="block font-bold mb-1">Your Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required class="bg-white text-black border border-[mediumslateblue] p-2 rounded-md w-full focus:border-[mediumslateblue] focus:shadow-[0_0_6px_black] outline-none">
+          </div>
+
+          <div>
+            <label for="contact-subject" class="block font-bold mb-1">Subject:</label>
+            <select id="contact-subject" name="contact-subject" required class="bg-white text-black border border-[mediumslateblue] p-2 rounded-md w-full focus:border-[mediumslateblue] focus:shadow-[0_0_6px_black] outline-none">
+              <option value="">Select a subject</option>
+              <option value="general">General Inquiry</option>
+              <option value="course">Course Information</option>
+              <option value="technical">Technical Support</option>
+              <option value="billing">Billing Question</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="contact-message" class="block font-bold mb-1">Message:</label>
+            <textarea id="contact-message" name="contact-message" rows="6" required class="bg-white text-black border border-[mediumslateblue] p-2 rounded-md w-full focus:border-[mediumslateblue] focus:shadow-[0_0_6px_black] outline-none"></textarea>
+          </div>
+
+          <div>
+            <label class="font-bold">Preferred Contact Method:</label><br>
+            <label><input type="radio" name="contact-method" value="email" checked class="mr-2 accent-[mediumslateblue]">Email</label>
+            <label class="ml-4"><input type="radio" name="contact-method" value="phone" class="mr-2 accent-[mediumslateblue]">Phone</label>
+          </div>
+
+          <div class="text-center">
+            <input type="submit" value="Send Message" class="bg-[mediumslateblue] text-white border-2 border-black px-6 py-2 rounded-md font-bold hover:bg-[mediumslateblue] hover:text-black hover:border-[whitesmoke] transition">
+          </div>
+        </form>
+      </article>
+      
+      <article>
+        <h3 class="bg-[mediumslateblue] text-white text-center font-bold mx-2 my-4 p-3 text-2xl underline rounded-md">Our Location</h3>
+        <address class="bg-[mediumslateblue] text-white p-4 rounded-md mx-2">
+          WebDev Training Center<br>
+          123 Learning Street<br>
+          Tech City, TC 10101<br>
+          Email: <a href="mailto:info@webdevcourse.com" class="text-white hover:underline hover:text-[whitesmoke] transition">info@webdevcourse.com</a><br>
+          Phone: <a href="tel:+15551234567" class="text-white hover:underline hover:text-[whitesmoke] transition">(555) 123-4567</a>
+        </address>
+      </article>
+      
+      <article>
+        <h3 class="bg-[mediumslateblue] text-white text-center font-bold mx-2 my-4 p-3 text-2xl underline rounded-md">Office Hours</h3>
+        <table class="border border-[mediumslateblue] w-4/5 max-w-[800px] mx-auto my-5 text-center border-collapse">
+          <thead>
+            <tr>
+              <th class="bg-[mediumslateblue] text-white p-2 border border-[mediumslateblue]">Day</th>
+              <th class="bg-[mediumslateblue] text-white p-2 border border-[mediumslateblue]">Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-[mediumslateblue] hover:text-white transition">
+              <td class="p-2 border border-[mediumslateblue]">Monday - Friday</td>
+              <td class="p-2 border border-[mediumslateblue]">9:00 AM - 6:00 PM</td>
+            </tr>
+            <tr class="hover:bg-[mediumslateblue] hover:text-white transition">
+              <td class="p-2 border border-[mediumslateblue]">Saturday</td>
+              <td class="p-2 border border-[mediumslateblue]">10:00 AM - 4:00 PM</td>
+            </tr>
+            <tr class="hover:bg-[mediumslateblue] hover:text-white transition">
+              <td class="p-2 border border-[mediumslateblue]">Sunday</td>
+              <td class="p-2 border border-[mediumslateblue]">Closed</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      
+      <article>
+        <h3 class="bg-[mediumslateblue] text-white text-center font-bold mx-2 my-4 p-3 text-2xl underline rounded-md">Frequently Asked Questions</h3>
+
+        <details class="my-2">
+          <summary class="bg-[mediumslateblue] text-white font-bold p-3 rounded-md cursor-pointer text-center">What prerequisites do I need for the courses?</summary>
+          <p class="bg-[mediumslateblue] text-white p-3 rounded-md mt-1">Our beginner courses require no prior experience. For intermediate and advanced courses, we recommend basic computer literacy and familiarity with using web browsers.</p>
+        </details>
+
+        <details class="my-2">
+          <summary class="bg-[mediumslateblue] text-white font-bold p-3 rounded-md cursor-pointer text-center">How long do I have access to course materials?</summary>
+          <p class="bg-[mediumslateblue] text-white p-3 rounded-md mt-1">You'll have lifetime access to all course materials once you enroll, including any future updates to the content.</p>
+        </details>
+
+        <details class="my-2">
+          <summary class="bg-[mediumslateblue] text-white font-bold p-3 rounded-md cursor-pointer text-center">Do you offer payment plans?</summary>
+          <p class="bg-[mediumslateblue] text-white p-3 rounded-md mt-1">Yes, we offer flexible payment plans for all our courses. Contact us for more information about available options.</p>
+        </details>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-[whitesmoke] p-8 text-center">
+    <p class="mb-4">&copy; 2023 Web Development Course. All rights reserved.</p>
+    <nav>
+      <ul class="flex justify-center gap-8 font-bold">
+        <li><a href="Index (Tailwind).html" class="text-[whitesmoke] hover:text-[mediumslateblue] hover:drop-shadow-[0_0_10px_grey] transition">Home</a></li>
+        <li><a href="registration (Tailwind).html" class="text-[whitesmoke] hover:text-[mediumslateblue] hover:drop-shadow-[0_0_10px_grey] transition">Registration</a></li>
+        <li><a href="product (Tailwind).html" class="text-[whitesmoke] hover:text-[mediumslateblue] hover:drop-shadow-[0_0_10px_grey] transition">Products</a></li>
+        <li><a href="contact (Tailwind).html" class="text-[whitesmoke] hover:text-[mediumslateblue] hover:drop-shadow-[0_0_10px_grey] transition">Contact Us</a></li>
+      </ul>
+    </nav>
+    <p class="mt-4 text-[whitesmoke]">This website demonstrates HTML5 semantic structure styled with Tailwind CSS.</p>
+  </footer>
+
+</body>
+</html>
